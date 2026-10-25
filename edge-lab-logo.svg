@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="edgeCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="aiIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <linearGradient id="cfOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="coreGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Orbital Radar Rings (Edge Mesh) -->
+  <circle cx="256" cy="256" r="220" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="8 12" opacity="0.35" />
+  <circle cx="256" cy="256" r="180" stroke="#818CF8" stroke-width="2" stroke-dasharray="5 9" opacity="0.25" />
+
+  <!-- Orbital Edge Perimeter Nodes -->
+  <circle cx="256" cy="36" r="8" fill="#38BDF8" />
+  <circle cx="446" cy="146" r="7" fill="#FB923C" />
+  <circle cx="446" cy="366" r="7" fill="#FB923C" />
+  <circle cx="256" cy="476" r="8" fill="#4F46E5" />
+  <circle cx="66" cy="366" r="7" fill="#818CF8" />
+  <circle cx="66" cy="146" r="7" fill="#38BDF8" />
+
+  <!-- Top Facet (Edge Gateway) -->
+  <polygon points="256,108 376,178 256,248 136,178" fill="url(#edgeCyan)" />
+  <polygon points="256,132 344,183 256,234 168,183" fill="#0B132B" opacity="0.35" />
+
+  <!-- Left Facet (AI Synapse / Matrix Layer) -->
+  <polygon points="136,178 256,248 256,388 136,318" fill="url(#aiIndigo)" />
+  <polygon points="156,204 236,251 236,358 156,311" fill="#0B132B" opacity="0.3" />
+
+  <!-- Right Facet (Infrastructure Bedrock) -->
+  <polygon points="256,248 376,178 376,318 256,388" fill="url(#cfOrange)" />
+  <polygon points="276,251 356,204 356,311 276,358" fill="#0B132B" opacity="0.3" />
+
+  <!-- Connecting Latency Vectors -->
+  <line x1="256" y1="108" x2="256" y2="36" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  <line x1="376" y1="178" x2="446" y2="146" stroke="#FB923C" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  <line x1="376" y1="318" x2="446" y2="366" stroke="#FB923C" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  <line x1="256" y1="388" x2="256" y2="476" stroke="#4F46E5" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  <line x1="136" y1="318" x2="66" y2="366" stroke="#818CF8" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  <line x1="136" y1="178" x2="66" y2="146" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+
+  <!-- Central Floating AI Tensor Core -->
+  <polygon points="256,208 288,248 256,288 224,248" fill="url(#coreGlow)" />
+  <circle cx="256" cy="248" r="5" fill="#0F172A" />
+</svg>
