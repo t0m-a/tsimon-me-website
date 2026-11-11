@@ -23,7 +23,7 @@ It enforces a strict **zero-dependency runtime architecture**:
   - **English (Primary):** [`index.html`](index.html)
   - **Français (Natif):** [`fr.html`](fr.html)
   - **Español (Profesional):** [`es.html`](es.html)
-* **PWA & Production Favicon Suite:** Multi-resolution vector and raster assets (`favicon.svg`, `favicon-96x96.png`, `apple-touch-icon.png`, `web-app-manifest-*.png`, `favicon.ico`) managed under [`site.webmanifest`](site.webmanifest).
+* **PWA, SEO & Production Favicon Suite:** Multi-resolution vector and raster assets (`favicon.svg`, `favicon-96x96.png`, `apple-touch-icon.png`, `web-app-manifest-*.png`, `favicon.ico`, `edge-lab-logo.svg`, `edge-lab-logo.png`) managed under [`site.webmanifest`](site.webmanifest), paired with multilingual indexing metadata ([`sitemap.xml`](sitemap.xml) and [`robots.txt`](robots.txt)).
 * **Zero External Trackers:** No third-party font CDNs, telemetry pixels, or analytic bloat.
 
 ---
@@ -104,12 +104,16 @@ Direct security channel verification is integrated into Section `[06]`:
 ├── style.css                      # Modular styling engine (Dual themes, Grid, Flex, Animations)
 ├── script.js                      # Client telemetry, UTC-4 clock, dropdowns, clipboard helpers
 ├── site.webmanifest               # Progressive Web App manifest
+├── sitemap.xml                    # Multilingual XML sitemap (EN / FR / ES + PDF dossiers)
+├── robots.txt                     # Search engine crawler directives & sitemap pointer
 ├── favicon.svg                    # Vector primary favicon
 ├── favicon.ico                    # Legacy multi-resolution icon
 ├── favicon-96x96.png              # Standard desktop browser icon
 ├── apple-touch-icon.png           # iOS Home screen icon
 ├── web-app-manifest-192x192.png   # Android standard PWA icon
 ├── web-app-manifest-512x512.png   # High-resolution splash icon
+├── edge-lab-logo.svg              # Edge AI & Infrastructure Lab vector emblem
+├── edge-lab-logo.png              # Edge AI & Infrastructure Lab raster emblem
 ├── Human-Context Architecture.md  # Core architectural design specification (v2.0.0)
 ├── LICENSE                        # GNU General Public License v3.0
 ├── README.md                      # Platform documentation & operational runbook
@@ -141,7 +145,7 @@ node -e "
 const fs = require('fs');
 ['index.html', 'fr.html', 'es.html'].forEach(p => {
   const html = fs.readFileSync(p, 'utf8');
-  [...html.matchAll(/(?:src|href)=\"([^\"#:]+\\.(?:css|js|ico|png|webmanifest|html|pdf|asc))\"/g)]
+  [...html.matchAll(/(?:src|href)=\"([^\"#:]+\\.(?:css|js|ico|png|webmanifest|html|xml|pdf|asc))\"/g)]
     .forEach(m => { if (!fs.existsSync(m[1])) console.error('Missing: ' + m[1] + ' in ' + p); });
 });
 console.log('Validation complete.');

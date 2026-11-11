@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English Edition (Primary / Default) -->
+  <url>
+    <loc>https://tsimon.me/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tsimon.me/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tsimon.me/fr.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tsimon.me/es.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tsimon.me/" />
+  </url>
+
+  <!-- French Edition (Natif) -->
+  <url>
+    <loc>https://tsimon.me/fr.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tsimon.me/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tsimon.me/fr.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tsimon.me/es.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tsimon.me/" />
+  </url>
+
+  <!-- Spanish Edition (Profesional) -->
+  <url>
+    <loc>https://tsimon.me/es.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tsimon.me/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tsimon.me/fr.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tsimon.me/es.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tsimon.me/" />
+  </url>
+
+  <!-- Targeted Dossier: Senior NOC Engineer (PDF) -->
+  <url>
+    <loc>https://tsimon.me/assets/Thomas_Simon_Senior_NOC_Engineer.pdf</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Targeted Dossier: AI & Cloud Infrastructure Architect (PDF) -->
+  <url>
+    <loc>https://tsimon.me/assets/Thomas_Simon_AI_and_Cloud_Infrastructure_Architect.pdf</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
