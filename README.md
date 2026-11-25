@@ -44,10 +44,7 @@ It enforces a strict **zero-dependency runtime architecture**:
  │         ├── Minka Lab (Decentralized Open-Source Platform & Digital Sovereignty in LatAm)
  │         ├── Local AI Edge Hub (Air-Gapped LLM Inference, Model Context Protocol)
  │         └── Global MSP Fleet Operations (Automated Tier-3 Multi-Tenant Infrastructure)
- ├── [04] NON-LINEAR SYNTHESIS: Cross-Disciplinary Operational Framing
- │         └── Documentary Optics (https://photo.tsimon.me) to Systems Architecture & Human Perception
- ├── [05] METHODOLOGY: 5-Stage Cognitive Encoding Protocol & Dynamic State Routing
- └── [06] DIRECT INGESTION CHANNELS (ENGAGEMENT TERMINAL):
+ └── [04] DIRECT INGESTION CHANNELS (ENGAGEMENT TERMINAL):
            ├── Direct Consulting Scope, Availability, Verified Communication Pathways
            ├── Dual Targeted Resume Downloads (AI & Cloud Architect / Senior NOC Engineer)
            └── OpenPGP Public Key (Key ID 0xA1048A81B9AEA757) with Cryptographic Fingerprint Verification
@@ -83,10 +80,10 @@ The platform embeds two targeted, production-ready engineering resumes located i
 
 **Access Vectors:**
 * **Hero CTA Dropdown:** Interactive `[ Download Dossier / Resumes ▾ ]` button with keyboard navigation (ESC) and outside-click dismissal.
-* **Section `[06]` Direct Ingestion Channels:** Dedicated one-click PDF download triggers across English, French, and Spanish editions.
+* **Section `[04]` Direct Ingestion Channels:** Dedicated one-click PDF download triggers across English, French, and Spanish editions.
 
 ### 4.2 Cryptographic Identity & RFC 4880 OpenPGP
-Direct security channel verification is integrated into Section `[06]`:
+Direct security channel verification is integrated into Section `[04]`:
 * **Public Key ID:** `0xA1048A81B9AEA757`
 * **Full SHA-1 Fingerprint:** `BDFC AB33 0606 4875 55F0 C3C6 A104 8A81 B9AE A757`
 * **Key Asset:** [`assets/Thomas M. Simon ts67200@gmail.com-(0xA1048A81B9AEA757)-public.asc`](assets/Thomas%20M.%20Simon%20ts67200@gmail.com-(0xA1048A81B9AEA757)-public.asc)

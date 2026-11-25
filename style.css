@@ -846,159 +846,7 @@ code {
 }
 
 /* --------------------------------------------------------------------------
-   9. THE NON-LINEAR SYNTHESIS (SECTION 04)
-   -------------------------------------------------------------------------- */
-.synthesis-layout {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: var(--space-2xl);
-  align-items: center;
-}
-
-.synthesis-text p {
-  font-size: var(--text-base);
-  line-height: var(--leading-relaxed);
-  color: var(--text-secondary);
-  margin-bottom: var(--space-md);
-}
-
-.synthesis-quote {
-  border-left: 2px solid var(--accent-lime);
-  padding-left: var(--space-md);
-  margin-top: var(--space-lg);
-  margin-bottom: var(--space-lg);
-  font-style: italic;
-  color: var(--text-primary);
-}
-
-.synthesis-spec-box {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-md);
-  padding: var(--space-lg);
-}
-
-.synthesis-spec-title {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  color: var(--accent-lime);
-  text-transform: uppercase;
-  margin-bottom: var(--space-md);
-  padding-bottom: var(--space-xs);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.synthesis-spec-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.synthesis-spec-item h5 {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.synthesis-spec-item p {
-  font-size: var(--text-xs);
-  color: var(--text-muted);
-  line-height: var(--leading-normal);
-  margin-bottom: 0;
-}
-
-/* --------------------------------------------------------------------------
-   10. METHODOLOGY: 5-STAGE PROTOCOL (SECTION 05)
-   -------------------------------------------------------------------------- */
-.protocol-stepper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--space-md);
-  margin-bottom: var(--space-2xl);
-}
-
-.protocol-step {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.protocol-step::after {
-  content: "→";
-  position: absolute;
-  right: -14px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--border-strong);
-  font-family: var(--font-mono);
-  font-size: 16px;
-}
-
-.protocol-step:last-child::after {
-  display: none;
-}
-
-.step-num {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  color: var(--accent-lime);
-  font-weight: 700;
-  margin-bottom: var(--space-xs);
-}
-
-.step-title {
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: var(--space-xs);
-  line-height: var(--leading-snug);
-}
-
-.step-desc {
-  font-size: var(--text-xs);
-  color: var(--text-secondary);
-  line-height: var(--leading-normal);
-  margin-bottom: 0;
-}
-
-/* State Router Bar */
-.state-router {
-  background: var(--bg-surface-subtle);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: var(--space-md) var(--space-lg);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-md);
-  align-items: start;
-}
-
-.state-item {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-}
-
-.state-badge {
-  color: var(--accent-cyan);
-  font-weight: 600;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.state-desc {
-  color: var(--text-muted);
-  line-height: 1.4;
-}
-
-/* --------------------------------------------------------------------------
-   11. CONTACT & ENGAGEMENT TERMINAL (SECTION 06)
+   9. CONTACT & ENGAGEMENT TERMINAL (SECTION 04)
    -------------------------------------------------------------------------- */
 .contact-section {
   background: var(--contact-gradient);
@@ -1184,7 +1032,7 @@ code {
 }
 
 /* --------------------------------------------------------------------------
-   12. FOOTER
+   10. FOOTER
    -------------------------------------------------------------------------- */
 .site-footer {
   padding-top: var(--space-xl);
@@ -1211,7 +1059,7 @@ code {
 }
 
 /* --------------------------------------------------------------------------
-   13. TOAST NOTIFICATION
+   11. TOAST NOTIFICATION
    -------------------------------------------------------------------------- */
 .toast {
   position: fixed;
@@ -1241,7 +1089,7 @@ code {
 }
 
 /* --------------------------------------------------------------------------
-   14. RESPONSIVE MEDIA QUERIES
+   12. RESPONSIVE MEDIA QUERIES
    -------------------------------------------------------------------------- */
 @media (max-width: 1080px) {
   .hero-grid {
@@ -1252,15 +1100,6 @@ code {
     grid-template-columns: repeat(2, 1fr);
   }
   .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  .protocol-stepper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .protocol-step:nth-child(2)::after {
-    display: none;
-  }
-  .synthesis-layout {
     grid-template-columns: 1fr;
   }
   .contact-grid {
@@ -1291,15 +1130,6 @@ code {
   .matrix-grid {
     grid-template-columns: 1fr;
   }
-  .protocol-stepper {
-    grid-template-columns: 1fr;
-  }
-  .protocol-step::after {
-    display: none;
-  }
-  .state-router {
-    grid-template-columns: 1fr 1fr;
-  }
   .section-wrapper {
     padding-top: var(--space-2xl);
     padding-bottom: var(--space-2xl);
@@ -1307,9 +1137,6 @@ code {
 }
 
 @media (max-width: 480px) {
-  .state-router {
-    grid-template-columns: 1fr;
-  }
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
