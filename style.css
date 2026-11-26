@@ -65,23 +65,23 @@
   --leading-normal: 1.65;
   --leading-relaxed: 1.8;
 
-  /* Spacing Rhythm */
-  --space-2xs: 4px;
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 24px;
-  --space-lg: 32px;
-  --space-xl: 48px;
-  --space-2xl: 64px;
-  --space-3xl: 96px;
+  /* Spacing Rhythm (Compact Technical Monograph) */
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 14px;
+  --space-xl: 18px;
+  --space-2xl: 20px;
+  --space-3xl: 24px;
 
   /* Structural Constraints */
-  --container-max: 1240px;
-  --container-narrow: 860px;
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --container-max: 100%;
+  --container-narrow: 100%;
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -284,7 +284,7 @@ code {
 }
 
 .section-header {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-md);
   container-type: inline-size;
 }
 
@@ -306,6 +306,7 @@ code {
   color: var(--text-secondary);
   max-width: 100%;
   line-height: var(--leading-normal);
+  margin-bottom: 0;
   text-wrap: balance;
 }
 
@@ -333,8 +334,8 @@ html[lang="es"] .section-subtitle {
   border-bottom: 1px solid var(--border-subtle);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   transition: background-color 200ms ease, border-color 200ms ease;
 }
 
@@ -342,9 +343,9 @@ html[lang="es"] .section-subtitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 48px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  min-height: 36px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   gap: var(--space-md);
 }
 
@@ -480,8 +481,8 @@ html[lang="es"] .section-subtitle {
    6. HERO & OPERATOR SPEC CARD (SECTION 01)
    -------------------------------------------------------------------------- */
 .hero-section {
-  padding-top: calc(var(--space-3xl) + var(--space-md));
-  padding-bottom: var(--space-3xl);
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-xl);
   border-bottom: 1px solid var(--border-subtle);
   background: var(--hero-gradient);
   transition: background 200ms ease;
@@ -490,7 +491,7 @@ html[lang="es"] .section-subtitle {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.95fr);
-  gap: var(--space-2xl);
+  gap: var(--space-xl);
   align-items: stretch;
 }
 
@@ -534,10 +535,10 @@ html[lang="es"] .section-subtitle {
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: var(--space-md, 14px);
+  gap: 14px;
   flex-wrap: wrap;
   margin-top: auto;
-  padding-top: clamp(1.25rem, 2.2vw, 2.5rem);
+  padding-top: clamp(1rem, 1.6vw, 1.5rem);
 }
 
 /* Buttons */
@@ -643,12 +644,12 @@ html[lang="es"] .section-subtitle {
 
 .operator-code-block {
   flex: 1;
-  padding: 20px;
+  padding: 14px 16px;
   margin: 0;
   background: var(--bg-code);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  line-height: 1.7;
+  line-height: 1.6;
   color: var(--text-code);
   overflow-x: auto;
   transition: background-color 200ms ease, color 200ms ease;
@@ -737,14 +738,14 @@ html[lang="es"] .section-subtitle {
 .matrix-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-md);
+  gap: 0;
 }
 
 .matrix-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: var(--space-lg);
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -804,14 +805,14 @@ html[lang="es"] .section-subtitle {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-lg);
+  gap: 0;
 }
 
 .project-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: var(--space-lg);
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -860,7 +861,11 @@ html[lang="es"] .section-subtitle {
 }
 
 .project-meta-block {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.project-meta-block:last-child {
+  margin-bottom: 0;
 }
 
 .meta-label {
@@ -877,6 +882,7 @@ html[lang="es"] .section-subtitle {
   font-size: var(--text-sm);
   color: var(--text-secondary);
   line-height: var(--leading-normal);
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -888,13 +894,13 @@ html[lang="es"] .section-subtitle {
 }
 
 .contact-section-tag {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xs);
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: var(--space-2xl);
+  gap: var(--space-lg);
   align-items: start;
 }
 
@@ -939,14 +945,14 @@ html[lang="es"] .section-subtitle {
 .engagement-models {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: 0;
 }
 
 .engagement-model-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: var(--space-md);
+  padding: 10px 14px;
   min-width: 0;
   transition: border-color var(--transition-fast);
 }
@@ -973,7 +979,7 @@ html[lang="es"] .section-subtitle {
   background: var(--bg-surface);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  padding: 0;
   min-width: 0;
 }
 
@@ -986,14 +992,14 @@ html[lang="es"] .section-subtitle {
 .channels-subtitle {
   font-size: var(--text-sm);
   color: var(--text-secondary);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-sm);
 }
 
 .channels-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
-  margin-bottom: var(--space-md);
+  gap: 0;
+  margin-bottom: 0;
 }
 
 .channel-item {
@@ -1001,8 +1007,8 @@ html[lang="es"] .section-subtitle {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 8px 12px;
-  padding: 12px 16px;
+  gap: 6px 12px;
+  padding: 10px 14px;
   background: var(--bg-surface-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
@@ -1089,8 +1095,8 @@ html[lang="es"] .section-subtitle {
    10. FOOTER
    -------------------------------------------------------------------------- */
 .site-footer {
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
   border-top: 1px solid var(--border-subtle);
   background: var(--bg-base);
   font-family: var(--font-mono);
@@ -1219,8 +1225,8 @@ html[lang="es"] .section-subtitle {
 @media (max-width: 480px) {
   .container,
   .container-narrow {
-    padding-left: var(--space-sm);
-    padding-right: var(--space-sm);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
   }
   .hero-actions {
     flex-direction: column;
@@ -1230,18 +1236,18 @@ html[lang="es"] .section-subtitle {
   }
   .btn {
     width: 100%;
-    padding: 12px 16px;
+    padding: 11px 14px;
     text-align: center;
   }
   .matrix-card,
   .project-card {
-    padding: var(--space-md);
+    padding: 12px;
   }
   .contact-channels-card {
-    padding: var(--space-sm);
+    padding: 0;
   }
   .channel-item {
-    padding: 12px;
+    padding: 10px 12px;
   }
   .footer-inner {
     flex-direction: column;
