@@ -285,6 +285,7 @@ code {
 
 .section-header {
   margin-bottom: var(--space-2xl);
+  container-type: inline-size;
 }
 
 .section-tag {
@@ -300,10 +301,22 @@ code {
 }
 
 .section-subtitle {
-  font-size: var(--text-base);
+  font-size: clamp(0.84rem, 1.3vw, 1.02rem);
+  font-size: clamp(0.84rem, 1.32cqi, 1.02rem);
   color: var(--text-secondary);
-  max-width: 680px;
+  max-width: 100%;
   line-height: var(--leading-normal);
+  text-wrap: balance;
+}
+
+html[lang="fr"] .section-subtitle {
+  font-size: clamp(0.82rem, 1.04vw, 0.98rem);
+  font-size: clamp(0.82rem, 1.04cqi, 0.98rem);
+}
+
+html[lang="es"] .section-subtitle {
+  font-size: clamp(0.82rem, 1.12vw, 0.98rem);
+  font-size: clamp(0.82rem, 1.12cqi, 0.98rem);
 }
 
 /* --------------------------------------------------------------------------
